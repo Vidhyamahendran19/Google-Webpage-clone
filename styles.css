@@ -14,8 +14,11 @@ header{
     padding:1rem;
     gap:1rem;
 }
-body{
+body, main{
     font-size:0.9rem;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
 }
 .nav-container{
     display:flex;
@@ -53,7 +56,120 @@ body{
     display:grid;
     place-items:center;
 }
+main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:2rem;
+    padding:1rem;
+    position:relative;
+    bottom:3rem;
+}
 .icon-link:hover{
-        background:rgba(211, 211, 211, 0.99);
+        background:rgba(235, 235, 235, 0.9);
 
 }
+.input-bar{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    width:100%;
+    max-width:600px;
+    border:1px solid rgb(235, 235, 235);
+    padding:1rem;
+    border-radius:1.4rem;
+}
+.input-bar:hover,
+.input-bar:focus-within{
+    box-shadow:0 0 4px 1px lightgray;
+}
+.input-bar input{
+    flex:1;
+    border:none;
+    outline:none;
+    width:100%;
+}
+.input-bar div{
+      display:flex;
+    align-items:center;
+    gap:1rem;
+}
+.main-title{
+    font-size:6rem;
+    font-weight:bold;  
+}
+
+.text-1{
+    color:rgba(66, 119, 233, 0.91);
+}
+.text-2{
+    color:rgb(223, 51, 51);
+}
+.text-3{
+     color:rgb(241, 218, 69);
+}
+.text-4{
+         color:rgb(60, 196, 76);
+
+}
+.input-icon:hover{
+    opacity:0.6;
+}
+.input-icon{
+    background:transparent;
+    border:none;
+    font-size:16px;
+}
+button{
+    cursor:pointer;
+}
+.button-grid{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+.button-grid button{
+    padding:0.5rem 1.2rem;
+    border:none;
+    background:rgb(247,247,247);
+    border-radius:0.25rem;
+}
+.button-grid button:hover{
+    border :1px solid slategray;
+}
+.language-link{
+    color:blue;
+    text-decoration:none;
+    cursor:pointer;
+}
+.language-link:hover{
+    text-decoration:underline;
+}
+.lang-text{
+    font-size:0.9rem;
+}
+footer{
+    background:rgb(249, 249, 249);
+    font-size:0.9rem;
+}
+footer  > div{
+    padding:1rem;
+}
+.footer-grid{
+display:flex;
+align-items:center;
+justify-content:space-around;
+}
+.footer-link{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    cursor:pointer;
+}
+.footer-link >a :hover{
+    text-decoration:underline;
+
+}
+
